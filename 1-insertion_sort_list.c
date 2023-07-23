@@ -39,3 +39,4 @@ void insertion_sort_list(listint_t **list)
 		ptr = ptr->next;
 	}
 }
+

@@ -34,6 +34,11 @@ void counting_sort(int *array, size_t size)
 	x = malloc(sizeof(int) * size);
 	for (i = 0; i < size; i++)
 	{
+		count_array[array[i]]--;
+		x[count_array[array[i]]] = array[i];
+	}
+	for (i = 0; i < size; i++)
+	{
 		array[i] = x[i];
 	}
 	free(x);
